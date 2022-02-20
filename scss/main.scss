@@ -2,11 +2,11 @@
 
 @import './utils/hidden';
 @import './utils/mixins';
+@import './utils/variables';
 
 @import './base/normalize';
 @import './base/reset';
 
-@import './components/variables';
 @import './components/section-sizes';
 @import './components/logo';
 @import './components/navigation';
