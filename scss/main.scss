@@ -1,9 +1,8 @@
+@import './fonts';
 
 @import './utils/hidden';
 @import './utils/mixins';
 
-
-@import './base/fonts';
 @import './base/normalize';
 @import './base/reset';
 
@@ -26,3 +25,4 @@
 @import './layout/footer';
 @import './layout/backdrop';
 @import './layout/portfolio';
+@import './layout/portfolio-overlay';
