@@ -14,13 +14,13 @@
   .backdrop.is-hidden{
     opacity: 0;
     pointer-events: none;
-    visibility:hidden
-  }
-  
-  .backdrop.is-hidden .modal{
-    transform: translate(-50%, -50%) skewX(-30deg) scale(1.2);
-    opacity: 0;
-    background-color: gray;
+    visibility:hidden;
+
+    & .modal{
+      transform: translate(-50%, -50%) skewX(-30deg) scale(1.2);
+      opacity: 0;
+      background-color: gray;
+    }
   }
   
   .modal{

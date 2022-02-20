@@ -49,11 +49,12 @@
     &:focus{
         border-color: $button-color;
     }
-    }
-    
-    .form-list__input:focus + .form-list__icon{
+    &:focus + .form-list__icon{
       fill: $button-color;
     }
+
+   }
+    
     
     .form-list__textarea{
       border-radius: 4px;
@@ -100,16 +101,14 @@
     
       transition: fill 250ms cubic-bezier(0.215, 0.610, 0.355, 1),
       background-color 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
+
+      .policy__input:checked + &{
+        fill: $background-color;
+        background-color: $button-color;
+        border: $button-color;
+      }
     }
-    
-    .policy__input:checked + .policy__icon{
-      fill: $background-color;
-      background-color: $button-color;
-      border: $button-color;
-    }
-    
-    
-    
+
     .policy__label{
         @include font ($fw:null, $lh: calc(24 / 14), $ls:0.03em );
 

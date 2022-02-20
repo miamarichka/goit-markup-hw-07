@@ -427,17 +427,6 @@ img {
   margin-right: 50px;
 }
 
-.nav-list__current::after {
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196F3;
-  position: absolute;
-  left: 0;
-  bottom: -1.5px;
-}
-
 .contacts-list {
   font-weight: 500;
   font-size: 14px;
@@ -449,14 +438,15 @@ img {
   color: #2196f3;
 }
 
-.nav-list__link,
-.contacts-list__link {
-  padding-bottom: 32px;
-  padding-top: 32px;
-}
-
-.nav-list__link {
-  position: relative;
+.nav-list__current::after {
+  content: '';
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #2196F3;
+  position: absolute;
+  left: 0;
+  bottom: -1.5px;
 }
 
 .contacts-list__email {
@@ -464,6 +454,9 @@ img {
 }
 
 .nav-list__link {
+  position: relative;
+  padding-bottom: 32px;
+  padding-top: 32px;
   color: #212121;
   font-weight: 500;
   font-size: 14px;
@@ -477,6 +470,8 @@ img {
 }
 
 .contacts-list__link {
+  padding-bottom: 32px;
+  padding-top: 32px;
   display: flex;
   align-items: center;
   color: #757575;
@@ -570,6 +565,43 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+.address-list__location, .address-list__phone, .address-list__mail {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+}
+
+.address-list__phone, .address-list__mail {
+  color: rgba(255, 255, 255, 0.6);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-list__phone:hover, .address-list__mail:hover, .address-list__phone:focus, .address-list__mail:focus {
+  color: #2196f3;
+}
+
+.address-list__location {
+  margin-bottom: 9px;
+}
+
+.address-list__mail {
+  margin-bottom: 9px;
+}
+
+.aaddress-list__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-wrap {
+  margin-right: 70px;
+  flex-grow: 1;
 }
 
 .subscribe-form {
@@ -952,51 +984,6 @@ img {
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
-}
-
-.address-list__location,
-.address-list__mail {
-  margin-bottom: 9px;
-}
-
-.aaddress-list__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.address {
-  font-style: normal;
-}
-
-.address-list__location,
-.address-list__mail,
-.address-list__phone {
-  color: #ffffff;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-}
-
-.address-list__phone {
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-list__phone:hover, .address-list__phone:focus {
-  color: #2196f3;
-}
-
-.address-list__mail {
-  color: rgba(255, 255, 255, 0.6);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-list__mail:hover, .address-list__mail:focus {
-  color: #2196f3;
-}
-
-.address-wrap {
-  margin-right: 70px;
-  flex-grow: 1;
 }
 
 .backdrop {

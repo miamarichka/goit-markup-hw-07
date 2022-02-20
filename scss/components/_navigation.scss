@@ -12,40 +12,34 @@
   margin-right: 50px;
 }
 
-.nav-list__current::after{
-  content: '';
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: #2196F3;
-  position: absolute;
-  left: 0;
-  bottom: -1.5px;
-}
-
 .contacts-list{
 @include font();
 }
 
 .nav-list__current {
     color: $button-color;
+
+    &::after{
+      content: '';
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: #2196F3;
+      position: absolute;
+      left: 0;
+      bottom: -1.5px;
+    }
   }
 
-  .nav-list__link,
-  .contacts-list__link {
-    padding-bottom: 32px;
-    padding-top: 32px;
-  }
-  
-  .nav-list__link{
-    position: relative;
-  }
-
-.contacts-list__email {
+ .contacts-list__email {
   margin-right: 50px;
 }
 
 .nav-list__link {
+  position: relative;
+  padding-bottom: 32px;
+  padding-top: 32px;
+
     color: $main-text-color;
     @include font();
     
@@ -60,6 +54,9 @@
   
 
   .contacts-list__link {
+    padding-bottom: 32px;
+    padding-top: 32px;
+
     @include list-wrap($jc:null);
     color: $additional-text-color;
     text-decoration: none;
