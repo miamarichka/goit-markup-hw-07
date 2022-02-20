@@ -1,0 +1,27 @@
+.site-nav__logo {
+    display: block;
+    font-family: $secondary-font;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: $button-color;
+  }
+
+  .site-nav__span {
+    color: $main-text-color;
+  }
+
+  .site-nav__link {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .footer__logo--white {
+    color: $title-color;
+  }
+
+  .footer__logo {
+    margin-bottom: 20px;
+  }
